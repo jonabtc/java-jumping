@@ -14,11 +14,7 @@ public class App {
     }
 
     private static Integer getMinimumJump(int[] arrayObstacles) {
-        int maxNumber= 0;
-
-        for (int i = 0; i < arrayObstacles.length; i++) {
-            maxNumber = Math.max(maxNumber, arrayObstacles[i]);
-        }
+        int maxNumber = arrayObstacles[arrayObstacles.length-1];
 
         for (int i = 1; i <= maxNumber ; i++) {
             int j = i;
